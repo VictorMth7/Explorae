@@ -23,55 +23,69 @@
   text-decoration: none;
 }
 
-/* Definindo o fundo preto fora da div.top-section */
-ion-content {
-  background-color: #000000; /* Fundo preto para toda a página */
+
+body {
+  background-color: #000000 !important; 
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
+
+ion-content {
+  --background: transparent; 
+  height: calc(100% - 26vh); 
+}
+
 
 .top-section {
   background-color: #84E9BD;
-  height: 26vh; /* Altura definida para 26% da altura da tela */
+  height: 26vh; 
   width: 100%;
 
-  /* Flexbox para centralizar os botões */
+  
   display: flex;
-  justify-content: space-around; /* Espaçamento uniforme ao redor dos botões */
+  justify-content: space-around; 
   align-items: center;
-  flex-wrap: wrap; /* Permite que os botões se reorganizem em múltiplas linhas se necessário */
-  padding: 20px;  /* Adiciona um pouco de espaçamento dentro da seção */
+  flex-wrap: wrap; 
+  padding: 20px;  
 }
 
 ion-button {
-  --background: #FFFFFF; /* Define o fundo branco dos botões */
-  color: #000000;        /* Define o texto dos botões na cor preta */
+  --background: #FFFFFF; 
+  color: #000000;        
 }
 
 .custom-button {
-  --background: #FFFFFF;     /* Fundo branco dos botões */
-  color: #000000;            /* Texto preto */
-  text-transform: none;      /* Inicial maiúscula */
-  font-weight: bold;         /* Texto em negrito */
-  font-family: 'Arial', sans-serif; /* Fonte robusta */
-  font-size: 1.2rem;         /* Tamanho da fonte */
-  width: 40%;                /* Largura inicial dos botões */
-  margin: 10px;              /* Espaçamento entre os botões */
-  max-width: 250px;          /* Limita o tamanho máximo dos botões */
-  flex-grow: 1;              /* Permite que os botões cresçam igualmente */
-  text-align: center;        /* Centraliza o texto dos botões */
+  --background: #FFFFFF;     
+  color: #000000;            
+  text-transform: none;      
+  font-weight: bold;         
+  font-family: 'Arial', sans-serif; 
+  font-size: 1.2rem;         
+  width: 40%;                
+  margin: 10px;              
+  max-width: 250px;          
+  flex-grow: 1;              
+  text-align: center;        
 }
 
-/* Media queries para tornar os botões responsivos */
+
 @media (max-width: 768px) {
   .custom-button {
-    width: 80%;              /* Botões maiores em telas menores */
-    font-size: 1.1rem;       /* Tamanho da fonte ajustado */
+    width: 80%;              
+    font-size: 1.1rem;       
   }
 }
 
 @media (max-width: 480px) {
   .custom-button {
-    width: 100%;             /* Botões ocupam toda a largura em telas pequenas */
-    font-size: 1rem;         /* Tamanho da fonte ajustado */
+    width: 100%;             
+    font-size: 1rem;         
   }
 }
 
+.full-screen {
+
+  background-color: black;
+}
