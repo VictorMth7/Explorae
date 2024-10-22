@@ -1,0 +1,7 @@
+{
+  "name": "exploraepj",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

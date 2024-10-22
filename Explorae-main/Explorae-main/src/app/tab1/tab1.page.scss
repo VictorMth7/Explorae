@@ -1,0 +1,10 @@
+p {
+    text-align: center;
+}
+.custom-button {
+    background-color: gray; /* fundo cinza */
+    color: white; /* texto branco */
+    --background: gray; /* para garantir a cor de fundo */
+    --color: white; /* para garantir a cor do texto */
+  }
+  

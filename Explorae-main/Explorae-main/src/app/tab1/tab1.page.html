@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="--background: #84e9bd; --color: #000000; font-weight: bold;">
+    <ion-title>
+      Exploraê
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background: #121212;">
+  <ion-header collapse="condense">
+    <ion-toolbar style="--background: #84e9bd; --color: #000000; font-weight: bold;">
+      <ion-title size="large">Exploraê</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div style="padding: 20px;">
+    <div style="display: flex; align-items: center;">
+      <img style="width: 100px; margin-right: 10px;" src="../assets/logo.png" alt="">
+      <p style="color: aliceblue; margin: 0;">Entre para a comunidade do Exploraê.</p>
+    </div>
+
+    <ion-item>
+      <ion-label position="floating">Login</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button href="/tab4" expand="block" class="custom-button" style="margin-top: 20px;">
+      Entrar
+    </ion-button>
+    
+    <ion-button href="/tabs/tab2" expand="block" class="custom-button" style="margin-top: 20px;">
+      Criar uma conta
+    </ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,165 @@
+/* Definindo o fundo preto para o body */
+body {
+  background-color: #000000 !important; /* Fundo preto para a página */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Evita rolagem horizontal desnecessária */
+}
+
+/* Fundo transparente para o ion-content */
+ion-content {
+  --background: transparent !important; /* Mantém o conteúdo com fundo transparente */
+}
+
+/* Div que ocupa toda a altura e largura do body */
+.full-screen {
+  min-height: 100vh; /* Ocupa pelo menos 100% da altura da viewport */
+  width: 100vw;      /* Ocupa 100% da largura da viewport */
+}
+
+/* Estilo para o conteúdo centrado */
+#container {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.top-section {
+  background-color: #84E9BD;
+  height: 26vh; /* Altura definida para 26% da altura da tela */
+  width: 100%;
+
+  /* Flexbox para centralizar os botões */
+  display: flex;
+  justify-content: space-around; /* Espaçamento uniforme ao redor dos botões */
+  align-items: center;
+  flex-wrap: wrap; /* Permite que os botões se reorganizem em múltiplas linhas se necessário */
+  padding: 20px;  /* Adiciona um pouco de espaçamento dentro da seção */
+}
+
+ion-button {
+  --background: #FFFFFF; /* Define o fundo branco dos botões */
+  color: #000000;        /* Define o texto dos botões na cor preta */
+}
+
+.custom-button {
+  --background: #FFFFFF;     /* Fundo branco dos botões */
+  color: #000000;            /* Texto preto */
+  text-transform: none;      /* Inicial maiúscula */
+  font-weight: bold;         /* Texto em negrito */
+  font-family: 'Arial', sans-serif; /* Fonte robusta */
+  font-size: 1.2rem;         /* Tamanho da fonte */
+  width: 40%;                /* Largura inicial dos botões */
+  margin: 10px;              /* Espaçamento entre os botões */
+  max-width: 250px;          /* Limita o tamanho máximo dos botões */
+  flex-grow: 1;              /* Permite que os botões cresçam igualmente */
+  text-align: center;        /* Centraliza o texto dos botões */
+}
+
+/* Media queries para tornar os botões responsivos */
+@media (max-width: 768px) {
+  .custom-button {
+    width: 80%;              /* Botões maiores em telas menores */
+    font-size: 1.1rem;       /* Tamanho da fonte ajustado */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-button {
+    width: 100%;             /* Botões ocupam toda a largura em telas pequenas */
+    font-size: 1rem;         /* Tamanho da fonte ajustado */
+  }
+}
+
+/* Estilo para a fila arrastável */
+.horizontal-scroll {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll; /* Adiciona a barra de rolagem horizontal */
+  scroll-snap-type: x mandatory; /* Suave deslizamento entre os cartões */
+}
+
+ion-card {
+  min-width: 200px; /* Largura mínima dos cartões */
+  margin-right: 10px; /* Espaçamento entre os cartões */
+  flex-shrink: 0; /* Garante que os cartões não encolham */
+  scroll-snap-align: start; /* Alinha o início dos cartões ao scroll */
+}
+
+@media (max-width: 768px) {
+  ion-card {
+    min-width: 150px; /* Largura mínima ajustada para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  ion-card {
+    min-width: 120px; /* Ajuste adicional para dispositivos móveis */
+  }
+}
+
+/* Fundo preto para a página */
+body {
+  background-color: #000000 !important;
+}
+
+/* Customizações adicionais de estilos (mantidas) */
+
+/* Estilo para ion-tab-bar */
+ion-tab-bar {
+  --background: #000000; /* Fundo preto para o tab bar */
+}
+
+ion-tab-button {
+  --color-selected: #84E9BD; /* Cor do ícone e label quando selecionado */
+  --color: #FFFFFF;          /* Cor do ícone e label não selecionado */
+}
+
+/* Aplicando fundo preto ao body */
+body {
+  background-color: #000000 !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fundo preto para o ion-content da aba de busca */
+ion-tab[tab="buscar"] ion-content {
+  --background: #000000 !important; /* Define fundo preto para o conteúdo da aba */
+}
+
+/* Estilo para o título da página de busca */
+.search-title {
+  color: #ffffff; /* Texto branco */
+  text-align: center; /* Centraliza o título */
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* Estilo para o campo de busca */
+.custom-searchbar {
+  --background: #333333; /* Fundo cinza escuro para o campo de busca */
+  --color: white;        /* Cor do texto dentro do campo de busca */
+  --placeholder-color: #bbbbbb; /* Cor do placeholder */
+  margin: 20px;
+}
