@@ -1,0 +1,102 @@
+/* Estilos para o corpo e conteúdo */
+body {
+  background-color: #000000; /* Fundo preto para o corpo */
+}
+
+/* Estilo do conteúdo */
+.full-screen {
+  background-color: #000000; /* Fundo preto para o ion-content */
+  color: #ffffff; /* Texto em branco */
+}
+
+/* Estilos para a seção superior */
+.top-section {
+  background-color: #84E9BD; /* Fundo verde */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* Estilo dos buttons */
+.custom-button {
+  --background: #ffffff; /* Fundo branco para os botões */
+  color: #000000; /* Texto em preto */
+  text-transform: none; /* Não transformar o texto */
+  font-weight: bold; /* Texto em negrito */
+  font-family: 'Arial', sans-serif; /* Fonte padrão */
+  font-size: 1rem; /* Tamanho de fonte */
+  margin: 10px; /* Margem ao redor do botão */
+  width: 100%; /* Tornando os botões responsivos */
+}
+
+/* Estilo dos cards */
+.custom-card {
+  background-color: black; /* Fundo do card em preto */
+  border: 1px solid gray; /* Borda cinza */
+  border-radius: 8px; /* Bordas arredondadas */
+  min-width: 280px; /* Largura mínima */
+  max-width: 400px; /* Largura máxima */
+  height: auto; /* Altura variável para flexibilidade */
+  margin-right: 10px; /* Margem à direita para espaçamento entre os cards */
+}
+
+/* Ajustes de texto nos cards */
+ion-card-title, ion-card-subtitle, ion-card-content {
+  color: antiquewhite; /* Cor do texto nos cards */
+}
+
+/* Estilo para o container dos cards */
+.card-container {
+  display: flex; /* Exibe os cards em linha */
+  overflow-x: auto; /* Permite rolagem horizontal */
+  padding: 10px; /* Padding interno */
+  justify-content: space-between; /* Espaçamento uniforme */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .custom-card {
+    min-width: 100%; /* Ocupa toda a largura em telas menores */
+  }
+
+  .custom-button {
+    font-size: 0.9rem; /* Reduz tamanho da fonte em telas menores */
+  }
+}
+
+/* Estilo para o título da busca */
+.search-title {
+  color: #84E9BD; /* Cor do texto do título */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilo do campo de busca */
+.custom-searchbar {
+  --background: #ffffff; /* Fundo branco */
+  --placeholder-color: gray; /* Cor do texto de placeholder */
+}
+
+/* Estilo da página de busca */
+ion-tab[tab="buscar"] ion-content {
+  background-color: #000000; /* Fundo preto */
+  color: #ffffff; /* Texto em branco */
+}
+
+/* Estilo do conteúdo adicional na página de busca */
+.search-content {
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  color: #ffffff; /* Texto em branco */
+}
+
+/* Estilo para os resultados da busca */
+.results-container {
+  margin-top: 20px;
+  color: #ffffff; /* Texto em branco */
+}
+
+/* Estilo para quando não houver resultados */
+.no-results {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff4f4f; /* Cor vermelha para indicar ausência de resultados */
+}
